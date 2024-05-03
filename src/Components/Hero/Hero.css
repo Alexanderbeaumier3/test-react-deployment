@@ -1,0 +1,143 @@
+/* Hero.css */
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #eef2f3;
+}
+
+
+.hero-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.hero-title {
+    font-size: 3em;
+    color: #2f4858;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero-tagline {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2b303a;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+
+.hero-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.hero-box {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+.hero-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.hero-box img {
+    width: 100%; /* This will ensure that the width of the image always fits the width of the container */
+    height: 275px; /* This will make sure the height automatically adjusts while maintaining the aspect ratio */
+    object-fit: cover; /* This will ensure that the image covers the entire content box, it might crop the image a bit but it will make all images the same size */
+}
+
+
+.hero-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2f4858;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.hero-button:hover {
+    background-color: #ff4747;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.24), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+@media(max-width: 80em) {
+    .hero {
+        padding-left: 6.25em;
+    }
+    .hero-content {
+        padding: 0 1.25em;
+    }
+    .hero-box {
+        width: 12.5em;
+        img {
+            height: 12.5em;
+        }
+    }
+}
+@media(max-width: 64em) {
+    .hero {
+        padding: 1.875em;
+    }
+    .hero-title {
+        font-size: 2.5em;
+    }
+    .hero-tagline {
+        font-size: 1.2em;
+    }
+    .hero-box {
+        width: 11.25em;
+        img {
+            height: 11.25em;
+        }
+    }
+}
+@media(max-width: 50em) {
+    .hero-title {
+        font-size: 2em;
+    }
+    .hero-tagline {
+        font-size: 1em;
+    }
+    .hero-box {
+        width: 9.375em;
+        img {
+            height: 9.375em;
+        }
+    }
+}
+@media(max-width: 31.25em) {
+    .hero-box {
+        width: 100%;
+        img {
+            height: 12.5em;
+        }
+    }
+} 
